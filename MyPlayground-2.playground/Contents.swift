@@ -66,3 +66,18 @@ enum Month{
     case January,February,March,April,May,June,July,August,September,October,November,December
 }
 
+
+var surname :  String = "pit"
+var count : Int = 10
+var scores : Double = 88.5
+var array : [Int] = [1,2,3,4]
+var users : [String : String] = [
+    "id" : "12s123s"
+]
+var books : Set<String> = ["Harry Potter","The Alchemist"]
+var teams : [String] = [String]()
+var cities : [String] = []
+var clues = [String]()
+
+
+
