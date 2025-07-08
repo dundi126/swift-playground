@@ -87,4 +87,6 @@ let message = "Hello this is \(name), and I'm \(age)yrs old"
 print(message)
 
 
-
+var cel = 24
+var far = cel * 9 / 5 + 32
+print(cel,far)
