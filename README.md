@@ -11,18 +11,18 @@ Welcome to **Swift Playground** – a personal learning space where I explore th
 
 ## 📚 What You’ll Find Here
 
-| Module                 | Topics Covered                                      | Status         |
-| ---------------------- | --------------------------------------------------- | -------------- |
-| 01 - Basics            | Variables, Constants, Data Types, Strings           | ✅ Done        |
-| 02 - Collections       | Arrays, Dictionaries, Sets, Tuples                  | 🟡 In Progress |
-| 03 - Control Flow      | If/Else, Switch, Loops                              | 🔜 Next        |
-| 04 - Functions         | Defining, Calling, Parameters, Return Types         | ⏳ Pending     |
-| 05 - Optionals         | Optional Binding, Optional Chaining, Nil-Coalescing | ⏳ Pending     |
-| 06 - Structs & Classes | Object-Oriented Programming in Swift                | ⏳ Pending     |
-| 07 - Enums & Protocols | Raw Values, Associated Values, Protocol Conformance | ⏳ Pending     |
-| 08 - Closures          | Syntax, Capturing Values, Trailing Closures         | ⏳ Pending     |
-| 09 - Error Handling    | Try/Catch, Throwing Functions                       | ⏳ Pending     |
-| 10 - SwiftUI Preview   | Basics of building UI with SwiftUI _(optional)_     | ⏳ Optional    |
+| Module                 | Topics Covered                                      | Status        |
+| ---------------------- | --------------------------------------------------- | ------------- |
+| 01 - Basics            | Variables, Constants, Data Types, Strings           | ✅ Done       |
+| 02 - Collections       | Arrays, Dictionaries, Sets, Tuples                  | ✅ Done       |
+| 03 - Control Flow      | If/Else, Switch, Loops                              | 🟡 InProgress |
+| 04 - Functions         | Defining, Calling, Parameters, Return Types         | 🔜 Next       |
+| 05 - Optionals         | Optional Binding, Optional Chaining, Nil-Coalescing | ⏳ Pending    |
+| 06 - Structs & Classes | Object-Oriented Programming in Swift                | ⏳ Pending    |
+| 07 - Enums & Protocols | Raw Values, Associated Values, Protocol Conformance | ⏳ Pending    |
+| 08 - Closures          | Syntax, Capturing Values, Trailing Closures         | ⏳ Pending    |
+| 09 - Error Handling    | Try/Catch, Throwing Functions                       | ⏳ Pending    |
+| 10 - SwiftUI Preview   | Basics of building UI with SwiftUI _(optional)_     | ⏳ Optional   |
 
 ## 🧑‍💻 Tools Used
 
