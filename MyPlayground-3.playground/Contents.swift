@@ -88,3 +88,60 @@ func rollDice2(Sides:Int , Roll:Int)-> [Int]{
 }
 
 print(rollDice2(Sides: 6, Roll:6))
+
+
+enum errorType:Error{
+    case invalidInput, invalidOperation,  OutofBound
+}
+
+func isUppercase(_ string : String) throws -> Bool{
+    if string != string.uppercased(){
+        throw errorType.invalidInput
+    }
+    
+    return true
+}
+
+let string = "HELLO"
+//print(isUppercase(stri÷/ng))
+
+do{
+    let result = try isUppercase("hello")
+    print(result)
+}catch{
+    print(error)
+}
+
+func printTables(for num :Int, end:Int = 12){
+    for i in 1...end{
+        print("\(num) * \(i) = \(num * i)")
+    }
+}
+
+printTables(for: 7 )
+printTables(for: 9,end: 11)
+
+
+
+func squareRoot(_ num:Int) throws -> Int{
+    if num < 1 || num > 100 {throw errorType.OutofBound}
+    
+    for i in 1...num{
+        if i * i == num{
+            return i
+        }
+    }
+    return 0
+}
+
+do{
+    let result = try squareRoot(1100)
+    if result == 0{
+        print("No root found")
+    }else{
+        print(result)
+    }
+    
+}catch{
+    print("Error")
+}
