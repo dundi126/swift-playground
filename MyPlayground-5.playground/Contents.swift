@@ -43,43 +43,108 @@ archer.takeVacation(days: 5)
 print(archer.vacationRemaining)
 
 
-struct Album2{
-    let title: String
-    let artist: String
-    let year: Int
+
+struct emp{
+    let name: String
+    var vacationsAllocated: Int
+    var vacationTaken: Int
     
-    func printSummary(){
-        print("\(title) (\(year)) by \(artist)")
+    var vacationRemaining:Int{
+        get {
+            vacationsAllocated - vacationTaken
+        }
+        set{
+            vacationsAllocated = vacationTaken + newValue
+        }
+        
     }
 }
 
-let red2 = Album2(title: "Red", artist: "Taylor Swift", year: 2012)
-let wings2 = Album2(title: "1989", artist: "Taylor Swift", year: 2014)
+var arch = emp(name: "Arch", vacationsAllocated: 14, vacationTaken: 5)
+print(arch.vacationRemaining)
+arch.vacationTaken += 3
+print(arch.vacationRemaining)
 
-print(red2.title)
-print(wings2.artist)
 
-red2.printSummary()
-wings2.printSummary()
 
-struct Employee2{
-    let name : String
-    var vacationRemaining : Int
-    
-    
-    mutating func takeVacation(days: Int){
-        if vacationRemaining > days{
-            vacationRemaining -= days
-            print("I'm going on vacation!!!")
-            print("Days remaining:\(vacationRemaining)")
-        }else{
-            print("Oops! There aren't enough days off.")
+struct Games{
+    var score = 0{
+        didSet{
+            print("Score \(score)")
         }
     }
 }
 
-var archer2 = Employee2(name: "Archer", vacationRemaining: 20)
-archer2.takeVacation(days: 5)
-print(archer2.vacationRemaining)
+var game = Games()
+game.score = 10
+game.score += 5
+game.score -= 7
+
+struct Apps {
+    var contacts = [String]() {
+        
+        willSet{
+            print("Current value : \(contacts)")
+            print("New valur : \(newValue)")
+        }
+        didSet{
+            print("There are now \(contacts.count) contacts")
+            print("Old values are \(oldValue)")
+        }
+    }
+}
+
+var app = Apps()
+app.contacts = ["Alice", "Bob"]
+app.contacts.append("Charlie")
+app.contacts.append("Dai")
+
+struct player {
+    let name: String
+    var number : Int
+    
+    init(name: String) {
+        self.name = name
+        number = Int.random(in: 1...100)
+    }
+}
+
+var p1 = player(name: "Alice")
+print("Player \(p1.name) has number \(p1.number)")
+
+struct AppData{
+    static let version = "1.3 Beta 2"
+    static let saveFileName = "savedData.json"
+    static let homeURL = "https://www.example.com"
+}
 
 
+struct carDetails{
+    let model : String
+    let seats : Int
+    var currentgear : Int
+    
+    private let maxGears = 10
+    
+    init(model: String, seats: Int, gear: Int) {
+        self.model = model
+        self.seats = seats
+        self.currentgear = gear
+    }
+    
+    mutating func gearUp(){
+        if currentgear < maxGears{
+            currentgear += 1
+        }
+    }
+    
+    mutating func gearDown(){
+        if currentgear > 1{
+            currentgear -= 1
+        }
+    }
+}
+
+var corollo = carDetails(model: "Toyota Corolla", seats: 5, gear: 1)
+corollo.gearUp()
+print(corollo.currentgear)
