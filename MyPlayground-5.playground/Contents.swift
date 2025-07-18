@@ -148,3 +148,77 @@ struct carDetails{
 var corollo = carDetails(model: "Toyota Corolla", seats: 5, gear: 1)
 corollo.gearUp()
 print(corollo.currentgear)
+
+
+class Employees{
+    var hours : Int
+    
+    init(hours: Int) {
+        self.hours = hours
+    }
+    
+    func printSummery(){
+        print("No of working hours\(hours)")
+    }
+    
+}
+
+
+class Deverlopers : Employees{
+    func work(){
+        print("I'm writing code for \(hours) hours")
+    }
+    
+    override func printSummery() {
+        print("This is overlide summary of the primary summary")
+    }
+}
+
+let rob = Deverlopers(hours: 8)
+rob.work()
+rob.printSummery()
+
+
+
+
+
+
+class vehical{
+    let isElectric : Bool
+    
+    init(isElectric: Bool) {
+        self.isElectric = isElectric
+    }
+}
+
+class car : vehical{
+    var speed : Int
+    
+    init(isElectric: Bool, speed: Int) {
+        self.speed = speed
+        super.init(isElectric: isElectric)
+    }
+}
+
+
+let teslaX = car(isElectric: true, speed: 74)
+teslaX.speed
+
+
+class user{
+    var name = "Anonynumys"
+    
+    func copy() -> user{
+        let us = user()
+        us.name = name
+        return us
+    }
+}
+
+var user1 = user()
+var user2 = user1.copy()
+
+user2.name = "Blake"
+print(user1.name)
+print(user2.name)
+
