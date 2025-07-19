@@ -222,83 +222,111 @@ user2.name = "Blake"
 print(user1.name)
 print(user2.name)
 
+class newUser{
+    var id : Int
+    
+    init(id:Int){
+        self.id = id
+        print("New user ID : \(id)")
+    }
+    
+    deinit {
+        print("User \(id) is loged out")
+    }
+}
+
+var users = [newUser]()
+
+for i in 1...3{
+    let user = newUser(id: i)
+    print("User \(i) in Contoll!!!")
+    users.append(user)
+}
+
+print("Loop ended!!!")
+users.removeAll()
+print("All users removed!!!")
+
+class Animal{
+    var legs :Int
+    
+    init(legs: Int) {
+        self.legs = legs
+    }
+}
+
+class Dog :Animal{
+    func speak(){
+        print("Dog Speak print woff woff")
+    }
+}
+
+class Corgi: Dog{
+    
+    override init(legs: Int = 4) {
+        super.init(legs: legs)
+    }
+    
+    override func speak() {
+        print("Corgi speeking wof wof")
+    }
+}
+
+class Poodle: Dog{
+    
+    override init(legs: Int = 4) {
+        super.init(legs: legs)
+    }
+    override func speak() {
+        print("Poodle speeking wof wof")
+    }
+}
+
+class Cat: Animal{
+    var isTame :Bool
+    
+    init(isTame: Bool, legs:Int = 4) {
+        self.isTame = isTame
+        super.init(legs:legs)
+    }
+    
+    func speak(){
+        print("Cat Speak print meow meow")
+    }
+}
+
+class Lion: Cat{
+    override init(isTame: Bool,legs:Int = 4) {
+        super.init(isTame: false, legs: legs)
+    }
+    
+    override func speak() {
+        print("Lion speeking roar roar")
+    }
+}
 
 
+class Persian: Cat{
+    override init(isTame:Bool,legs:Int = 4){
+        super.init(isTame: isTame, legs: legs)
+    }
+    
+    override func speak(){
+        print("Persian speeking purr purr")
+    }
+}
 
-//
-//var corollo = carDetails(model: "Toyota Corolla", seats: 5, gear: 1)
-//corollo.gearUp()
-//print(corollo.currentgear)
-//
-//
-//class Employees{
-//    var hours : Int
-//    
-//    init(hours: Int) {
-//        self.hours = hours
-//    }
-//    
-//    func printSummery(){
-//        print("No of working hours\(hours)")
-//    }
-//    
-//}
-//
-//
-//class Deverlopers : Employees{
-//    func work(){
-//        print("I'm writing code for \(hours) hours")
-//    }
-//    
-//    override func printSummery() {
-//        print("This is overlide summary of the primary summary")
-//    }
-//}
-//
-//let rob = Deverlopers(hours: 8)
-//rob.work()
-//rob.printSummery()
-//
-//
-//
-//
-//
-//
-//class vehical{
-//    let isElectric : Bool
-//    
-//    init(isElectric: Bool) {
-//        self.isElectric = isElectric
-//    }
-//}
-//
-//class car : vehical{
-//    var speed : Int
-//    
-//    init(isElectric: Bool, speed: Int) {
-//        self.speed = speed
-//        super.init(isElectric: isElectric)
-//    }
-//}
-//
-//
-//let teslaX = car(isElectric: true, speed: 74)
-//teslaX.speed
-//
-//
-//class user{
-//    var name = "Anonynumys"
-//    
-//    func copy() -> user{
-//        let us = user()
-//        us.name = name
-//        return us
-//    }
-//}
-//
-//var user1 = user()
-//var user2 = user1.copy()
-//
-//user2.name = "Blake"
-//print(user1.name)
-//print(user2.name)
+
+let corgi = Corgi()
+print("Corgi (\(corgi.legs) legs)")
+corgi.speak()
+let poodle = Poodle()
+print("Poodle (\(poodle.legs) legs)")
+poodle.speak()
+
+var persian = Persian(isTame: true)
+print("Persian (\(persian.legs) legs)")
+persian.speak()
+var lion = Lion(isTame: false)
+print("Lion (\(lion.legs) legs)")
+lion.speak()

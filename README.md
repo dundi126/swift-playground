@@ -18,9 +18,9 @@ Welcome to **Swift Playground** – a personal learning space where I explore th
 | 03 - Control Flow      | If/Else, Switch, Loops                              | ✅ Done       |
 | 04 - Functions         | Defining, Calling, Parameters, Return Types         | ✅ Done       |
 | 05 - Closures          | Syntax, Capturing Values, Trailing Closures         | ✅ Done       |
-| 06 - Structs & Classes | Object-Oriented Programming in Swift                | 🟡 InProgress |
-| 07 - Optionals         | Optional Binding, Optional Chaining, Nil-Coalescing | 🔜 Next       |
-| 08 - Enums & Protocols | Raw Values, Associated Values, Protocol Conformance | ⏳ Pending    |
+| 06 - Structs & Classes | Object-Oriented Programming in Swift                | ✅ Done       |
+| 07 - Enums & Protocols | Raw Values, Associated Values, Protocol Conformance | 🟡 InProgress |
+| 08 - Optionals         | Optional Binding, Optional Chaining, Nil-Coalescing | 🔜 Next       |
 | 09 - Closures          | Syntax, Capturing Values, Trailing Closures         | ⏳ Pending    |
 | 10 - Error Handling    | Try/Catch, Throwing Functions                       | ⏳ Pending    |
 | 11 - SwiftUI Preview   | Basics of building UI with SwiftUI _(optional)_     | ⏳ Optional   |
