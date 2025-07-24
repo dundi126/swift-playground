@@ -32,3 +32,33 @@ func printSquare(number:Int?){
 
  
 printSquare(number: 9)
+
+
+let captain = [
+    "Enterprise" : "Picard",
+    "Voyager" : "Data",
+    "Discovery" : "Sarek"
+]
+
+let new = captain["serenity"] ?? "Not Found"
+
+struct Book{
+    let title : String
+    let author : String?
+
+}
+
+let book = Book(title: "Amster", author: nil)
+let author = book.author ?? "Unknown"
+print(book,author)
+
+let iinput = ""
+let num = Int(iinput) ?? 0
+print(num)
+
+
+
+func rand(arr : [Int]?) -> Int{
+    arr?.randomElement() ?? .random(in: 1...100)
+}
+

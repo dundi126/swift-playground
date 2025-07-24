@@ -11,19 +11,16 @@ Welcome to **Swift Playground** – a personal learning space where I explore th
 
 ## 📚 What You’ll Find Here
 
-| Module                 | Topics Covered                                      | Status        |
-| ---------------------- | --------------------------------------------------- | ------------- |
-| 01 - Basics            | Variables, Constants, Data Types, Strings           | ✅ Done       |
-| 02 - Collections       | Arrays, Dictionaries, Sets, Tuples                  | ✅ Done       |
-| 03 - Control Flow      | If/Else, Switch, Loops                              | ✅ Done       |
-| 04 - Functions         | Defining, Calling, Parameters, Return Types         | ✅ Done       |
-| 05 - Closures          | Syntax, Capturing Values, Trailing Closures         | ✅ Done       |
-| 06 - Structs & Classes | Object-Oriented Programming in Swift                | ✅ Done       |
-| 07 - Enums & Protocols | Raw Values, Associated Values, Protocol Conformance | ✅ Done       |
-| 08 - Optionals         | Optional Binding, Optional Chaining, Nil-Coalescing | 🟡 InProgress |
-| 09 - Closures          | Syntax, Capturing Values, Trailing Closures         | 🔜 Next       |
-| 10 - Error Handling    | Try/Catch, Throwing Functions                       | ⏳ Pending    |
-| 11 - SwiftUI Preview   | Basics of building UI with SwiftUI _(optional)_     | ⏳ Optional   |
+| Module                 | Topics Covered                                      | Status  |
+| ---------------------- | --------------------------------------------------- | ------- |
+| 01 - Basics            | Variables, Constants, Data Types, Strings           | ✅ Done |
+| 02 - Collections       | Arrays, Dictionaries, Sets, Tuples                  | ✅ Done |
+| 03 - Control Flow      | If/Else, Switch, Loops                              | ✅ Done |
+| 04 - Functions         | Defining, Calling, Parameters, Return Types         | ✅ Done |
+| 05 - Closures          | Syntax, Capturing Values, Trailing Closures         | ✅ Done |
+| 06 - Structs & Classes | Object-Oriented Programming in Swift                | ✅ Done |
+| 07 - Enums & Protocols | Raw Values, Associated Values, Protocol Conformance | ✅ Done |
+| 08 - Optionals         | Optional Binding, Optional Chaining, Nil-Coalescing | ✅ Done |
 
 ## 🧑‍💻 Tools Used
 
